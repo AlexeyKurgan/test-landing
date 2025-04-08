@@ -1,0 +1,66 @@
+@use '../../styles/mixins' as mixins;
+@use '../../styles/variable.scss' as variable;
+
+$font-size-base: 16px;
+$font-size-title: 24px;
+$font-size-subtitle: 18px;
+
+.main {
+    color: variable.$text-color;
+    font-size: $font-size-base;
+    padding: 0px 8px 16px 8px;
+    text-align: center;
+
+    .title {
+        font-family: variable.$inter;
+        font-weight: 600;
+        font-size: $font-size-title;
+        margin: 0;
+
+        &--main-screen {
+            margin-bottom: 8px;
+        }
+
+        &--preference-form {
+            line-height: 36px;
+            margin-bottom: 16px;
+        }
+
+        @media (min-width: 600px) {
+            font-size: 36px;
+            line-height: 50px;
+        }
+    }
+
+    .subtitle {
+        font-family: variable.$poppins;
+        font-weight: 600;
+        font-size: $font-size-subtitle;
+        font-size: 14px;
+        margin-bottom: 13px;
+
+        &--preference-form {
+            margin: 16px 0;
+        }
+
+        @media (min-width: 600px) {
+            font-size: 20px;
+            margin: 32px 0 16px 0;
+        }
+    }
+
+    .sex-selection {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+
+        @media (min-width: 600px) {
+            gap: 30px;
+        }
+    }
+
+    @media (min-width: 600px) {
+        min-height: calc(100vh - 169px);
+    }
+}

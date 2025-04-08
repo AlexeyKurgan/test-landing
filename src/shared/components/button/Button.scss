@@ -1,0 +1,40 @@
+@use '../../../styles/mixins.scss' as mixins;
+@use '../../../styles/variable.scss' as variable;
+
+// Main styles for buttons
+.button {
+    color: variable.$button-color;
+    font-family: variable.$poppins;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 8px;
+}
+
+// Sign in button
+.sign-in {
+    @include mixins.flex-center;
+    text-decoration: none;
+    padding: 8px 24px;
+    border: 0;
+}
+
+// Continue button
+.btn-continue {
+    background-color: variable.$button-bg;
+    color: variable.$white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 16px;
+    font-family: variable.$poppins;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 343px;
+
+    @media (min-width: 768px) {
+        .btn-continue {
+            max-width: 400px;
+        }
+    }
+}

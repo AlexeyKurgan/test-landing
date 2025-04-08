@@ -1,0 +1,23 @@
+@use '../../../styles/mixins.scss' as mixins;
+@use '../../../styles/variable.scss' as variable;
+
+.progress-bar-wrapper {
+    padding: 18px 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    border-radius: 8px;
+    background-color: rgba(variable.$white, 0.4);
+}
+
+.progress-fill {
+    width: 59%;
+    height: 4px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: variable.$white;
+}

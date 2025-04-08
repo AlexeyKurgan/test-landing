@@ -1,0 +1,42 @@
+@use '../../../styles/mixins.scss' as mixins;
+@use '../../../styles/variable.scss' as variable;
+
+.logo {
+    font-family: variable.$poppins;
+    font-weight: 700;
+    font-size: 23px;
+    position: relative;
+    display: flex;
+    text-transform: lowercase;
+
+    .left-txt {
+        color: variable.$logo-txt-color1;
+        margin-right: 2px;
+        margin-left: 17px;
+    }
+
+    .right-txt {
+        color: variable.$logo-txt-color2;
+    }
+
+    .registered {
+        @include mixins.flex-center;
+        width: 8px;
+        height: 8px;
+        font-family: variable.$poppins;
+        font-weight: 700;
+        position: relative;
+        top: 4px;
+        left: 2px;
+        border: 1px solid variable.$black;
+        border-radius: 50%;
+
+        i {
+            font-size: 7px;
+            position: absolute;
+            left: 1px;
+            top: -1px;
+            text-transform: uppercase;
+        }
+    }
+}

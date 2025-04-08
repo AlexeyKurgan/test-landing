@@ -1,0 +1,26 @@
+@use '../../styles/mixins' as mixins;
+@use '../../styles/variable.scss' as variable;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+.account-wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+
+.account-already-txt {
+    font-size: 1em;
+    display: none;
+    color: variable.$color2;
+    margin-right: 16px;
+    font-family: variable.$inter;
+
+    @media (min-width: 961px) {
+        display: block;
+    }
+}
