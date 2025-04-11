@@ -1,0 +1,29 @@
+@use '../../../styles/mixins.scss' as mixins;
+@use '../../../styles/variable.scss' as variable;
+
+.lp-select {
+    width: 100%;
+    padding: 19px 48px 19px 16px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(variable.$white, 0.6);
+    font-family: variable.$poppins;
+    font-weight: 400;
+    font-size: 20px;
+    color: variable.$text-color;
+    appearance: none;
+    cursor: pointer;
+
+    option[disabled][selected] {
+        color: variable.$text-color;
+        opacity: 0.6;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    @media (min-width: 600px) {
+        min-width: 128px;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../shared/components/button/Button';
+import LPSelect from '../../shared/components/select/LPSelect';
 import './PreferenceForm.scss';
 
 const PreferenceForm = () => {
@@ -8,38 +9,38 @@ const PreferenceForm = () => {
             <h1 className="title title--preference-form">Select your age preference for women</h1>
             <section className="age-preference">
                 <div className="select-wrapper">
-                    <select name="age-from">
+                    <LPSelect className="lp-select" name="age-form">
                         <option value="" disabled selected>From</option>
                         <option value="25">25</option>
-                    </select>
+                    </LPSelect>
                 </div>
                 <div className="select-wrapper">
-                    <select name="age-to">
+                    <LPSelect className="lp-select" name="age-form">
                         <option value="" disabled selected>To</option>
                         <option value="35">35</option>
-                    </select>
+                    </LPSelect>
                 </div>
             </section>
 
             <h2 className="subtitle subtitle--preference-form">What is your age?</h2>
             <section className="birth-date">
                 <div className="select-wrapper">
-                    <select name="month">
+                    <LPSelect className="lp-select" name="month">
                         <option value="" disabled selected>Month</option>
                         <option value="1">January</option>
-                    </select>
+                    </LPSelect>
                 </div>
                 <div className="select-wrapper">
-                    <select name="day">
+                    <LPSelect className="lp-select" name="day">
                         <option value="" disabled selected>Day</option>
                         <option value="1">1</option>
-                    </select>
+                    </LPSelect>
                 </div>
                 <div className="select-wrapper">
-                    <select name="year">
+                    <LPSelect className="lp-select" name="day">
                         <option value="" disabled selected>Year</option>
                         <option value="1995">1995</option>
-                    </select>
+                    </LPSelect>
                 </div>
             </section>
 

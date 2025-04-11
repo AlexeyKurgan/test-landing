@@ -1,16 +1,22 @@
+import "./Content.scss";
 import MainScreen from "../main-screen/MainScreen";
 import PreferenceForm from "../preference-form/PreferenceForm";
-import "./Content.scss";
+import UsersCallForm from "../users-call/UsersCallForm";
+import EnjoyContentForm from "../enjoyContent/EnjoyContentForm,";
+import CreatePassword from "../createPasswordForm/CreatePasswordForm";
+import SuccessMessageForm from "../successMessageForm/successMessageForm";
 
  const Content = ({images}) => {
-  // Треба змінити змінну для показу секції форми степа 3
-  const isBlockVisible = false;
+  
 
   return (
     <main className='main'>
-      {isBlockVisible ? (
-        <MainScreen images={images}/>
-      ):(<PreferenceForm/>)}
+      {/* <MainScreen images={images}/> */}
+      {/* <PreferenceForm/> */}
+      {/* <UsersCallForm/> */}
+      {/* <EnjoyContentForm/> */}
+      {/* <CreatePassword/> */}
+      <SuccessMessageForm/>
     </main>
     
   )

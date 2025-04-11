@@ -26,6 +26,19 @@ $font-size-subtitle: 18px;
             margin-bottom: 16px;
         }
 
+        &--users-call-form,
+        &--enjoy-content-form {
+            margin-bottom: 16px;
+
+            @media (min-width: 600px) {
+                margin: 0 auto;
+                margin-bottom: 24px;
+                max-width: 600px;
+
+            }
+        }
+
+
         @media (min-width: 600px) {
             font-size: 36px;
             line-height: 50px;
@@ -41,6 +54,11 @@ $font-size-subtitle: 18px;
 
         &--preference-form {
             margin: 16px 0;
+        }
+
+        &--success-message-form {
+            margin-top: 16px;
+            line-height: 24px;
         }
 
         @media (min-width: 600px) {

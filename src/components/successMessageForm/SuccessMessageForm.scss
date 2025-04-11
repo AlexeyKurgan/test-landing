@@ -1,0 +1,22 @@
+@use '../../styles/mixins' as mixins;
+@use '../../styles/variable.scss' as variable;
+
+.checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .image-wrapper {
+        max-width: 200px;
+        max-height: 200px;
+        margin-bottom: 1em;
+        overflow: hidden;
+    }
+
+    .disclaimer {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        max-width: 315px;
+        margin: 0 0 16px 16px
+    }
+}

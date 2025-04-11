@@ -1,0 +1,48 @@
+@use '../../styles/mixins' as mixins;
+@use '../../styles/variable.scss' as variable;
+
+.cookies-section {
+    width: calc(100% - 16px);
+    max-width: 345px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 1em;
+    border-radius: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: variable.$white;
+    padding: 8px;
+
+    p {
+        margin: 0 8px;
+        text-align: center;
+        font-family: variable.$inter;
+        font-weight: 400;
+        flex-grow: 1;
+        box-sizing: border-box;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: left;
+        color: variable.$button-color;
+        letter-spacing: 1px;
+
+
+        @media (min-width: 961px) {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 600px) {
+        max-width: 400px;
+    }
+
+    @media (min-width: 961px) {
+        max-width: calc(100% - 80px);
+        padding: 8px 16px;
+    }
+}

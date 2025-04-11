@@ -1,0 +1,72 @@
+@use '../../../styles/mixins.scss' as mixins;
+@use '../../../styles/variable.scss' as variable;
+
+.lp-input {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 19px 16px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(variable.$white, 0.6);
+    font-family: variable.$poppins;
+    font-weight: 400;
+    font-size: 20px;
+    color: variable.$text-color;
+    cursor: text;
+
+    &::placeholder {
+        color: variable.$text-color;
+        opacity: 0.6;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    @media (min-width: 600px) {
+        min-width: 128px;
+    }
+}
+
+
+.lp-checkbox {
+    width: 20px;
+    height: 20px;
+
+    background-color: transparent;
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 6px;
+
+    &::after {
+        content: '';
+        @include mixins.flex-center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 20px;
+        max-height: 20px;
+        border: 4px solid variable.$checkbox-color;
+        border-radius: 4px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: variable.$checkbox-color;
+        font-size: 14px;
+        background-color: variable.$white;
+    }
+
+    &:checked {
+        &::after {
+            content: '✓';
+            font-size: 1em;
+            font-weight: 600;
+        }
+    }
+
+    @media (min-width: 600px) {
+        min-width: auto;
+        max-width: 400px;
+    }
+}

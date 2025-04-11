@@ -10,6 +10,7 @@ import photo7 from './assets/Photo-6.jpg';
 import photo8 from './assets/Photo-7.jpg';
 import photo9 from './assets/Photo-8.jpg';
 import Header from './components/header/Header'
+import Cookies from "./components/cookies/Cookies";
 
 import ProgressBar from './shared/components/progress-bar/ProgressBar';
 import Content from './components/content/Content'
@@ -23,6 +24,7 @@ function App() {
       <Header/>
       <ProgressBar/>
       <Content images={images}/>
+      <Cookies/>
       <Footer/>
     </div>
   )
